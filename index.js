@@ -241,18 +241,18 @@ if(isLocked && correctUser === enteredUser  && correctPass === enteredPass){
 // ----- 9. BMI category -----
 // Variables: weight (kg), height (m). bmi = weight / (height * height). Log:
 //   below 18.5 -> "Underweight", 18.5–24.9 -> "Normal", 25–29.9 -> "Overweight", 30+ -> "Obese".
-// let weight = 100
-// let height = 1.75
-// let bmi = weight / (height * height)
-// if(bmi < 18.5){
-//   console.log("Underweight")
-// }else if(bmi >= 18.5 & bmi <= 24.9 ){
-//   console.log("Normal")
-// }else if(bmi >= 25 & bmi <= 29.9){
-//   console.log("Overweight")
-// }else{
-//   console.log("Obese")
-// }
+let weight = 100
+let height = 1.75
+let bmi = weight / (height * height)
+if(bmi < 18.5){
+  console.log("Underweight")
+}else if(bmi >= 18.5 & bmi <= 24.9 ){
+  console.log("Normal")
+}else if(bmi >= 25 & bmi <= 29.9){
+  console.log("Overweight")
+}else{
+  console.log("Obese")
+}
 
 
 // ----- 10. Mini ATM -----
@@ -260,16 +260,16 @@ if(isLocked && correctUser === enteredUser  && correctPass === enteredPass){
 // Allow only when withdrawAmount <= balance AND withdrawAmount <= dailyLimit.
 //   allowed -> subtract from balance, log "Success" + new balance;
 //   too much -> "Insufficient funds"; over limit -> "Over daily limit".
-// let balance = 50
-// let withdrawAmount = 400
-// const dailyLimit = 300
-// if(withdrawAmount <= balance && withdrawAmount <= dailyLimit){
-//   console.log("success")
-// } else if (withdrawAmount <= balance && withdrawAmount <= dailyLimit){
-//   console.log("Over daily limit")
-// }else{
-//   console.log( "balance")
-// }
+let balance = 50
+let withdrawAmount = 400
+const dailyLimit = 300
+if(withdrawAmount <= balance && withdrawAmount <= dailyLimit){
+  console.log("success")
+} else if (withdrawAmount <= balance && withdrawAmount <= dailyLimit){
+  console.log("Over daily limit")
+}else{
+  console.log( "balance")
+}
 // ----- 11. Leap year check -----
 // Variable: year. Leap when divisible by 4 AND (not divisible by 100 OR divisible by 400).
 // Use % with && and ||. Log "Leap year" or "Normal year". Test with 2000, 1900, 2024.
@@ -279,16 +279,16 @@ if(isLocked && correctUser === enteredUser  && correctPass === enteredPass){
 // ----- 12. FizzBuzz (one number) -----
 // Variable: n. divisible by 3 AND 5 -> "FizzBuzz", by 3 only -> "Fizz", by 5 only -> "Buzz",
 // otherwise -> the number itself. Test with 15, 9, 10, 7.
-// let num  = 7
-// if(num % 3 ===0 && num % 5 ===0){
-//   console.log("FizzBuzz")
-// }else if(num % 3 ===0){
-//   console.log("Fizz")
-// }else if(num % 5 ===0){
-//   console.log("Buzz")
-// }else{
-//   console.log("num")
-// }
+let num  = 7
+if(num % 3 ===0 && num % 5 ===0){
+  console.log("FizzBuzz")
+}else if(num % 3 ===0){
+  console.log("Fizz")
+}else if(num % 5 ===0){
+  console.log("Buzz")
+}else{
+  console.log("num")
+}
 // ----- 13. Rock paper scissors -----
 // Variables: player1, player2 (strings: "rock", "paper", "scissors").
 // Log "Player 1 wins", "Player 2 wins", or "Tie". rock>scissors, scissors>paper, paper>rock.
@@ -305,18 +305,18 @@ if(isLocked && correctUser === enteredUser  && correctPass === enteredPass){
 // Variable: hour (0–23). Convert to 12-hour and log like "3 PM".
 //   0 -> "12 AM", 12 -> "12 PM", 1–11 -> "AM", 13–23 -> subtract 12 and add "PM".
 // Test with 0, 9, 12, 18.
-// let hours  = 18
-// if(hours === 0 ){
-//   console.log("12 AM")
-// }else if(hours === 12){
-//   console.log("12PM")
-// }else if(hours >= 1  && hours <= 11){
-//   console.log("AM")
-// }else if(hours >= 13 && hours <=23){
-//   console.log("subtract 12" )
-// }else{
-//   console.log("PM")
-// }
+let hours  = 18
+if(hours === 0 ){
+  console.log("12 AM")
+}else if(hours === 12){
+  console.log("12PM")
+}else if(hours >= 1  && hours <= 11){
+  console.log("AM")
+}else if(hours >= 13 && hours <=23){
+  console.log("subtract 12" )
+}else{
+  console.log("PM")
+}
 
 // ----- 16. Shipping cost -----
 // Variables: weight (kg), isExpress (boolean), isMember (boolean).
