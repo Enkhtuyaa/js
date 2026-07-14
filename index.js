@@ -88,9 +88,9 @@ if (temp > 28) {
 // If both are correct, log "Welcome", otherwise "Access denied".
 let username = "admin";
 let password = "1234";
-if ((username === "admin" && password === "1234" )) {
+if (username === "admin" && password === "1234") {
   console.log("Welcome");
-}  else {
+} else {
   console.log("Access denied");
 }
 
@@ -119,11 +119,11 @@ if (age1 < 12) {
 // Declare `let light = "yellow"`. Log:
 //   "green" -> "Go", "yellow" -> "Slow down", "red" -> "Stop", else -> "Invalid light".
 let Light = "yellow";
-if (Light ==="green") {
+if (Light === "green") {
   console.log("Go");
-} else if (Light ==="yellow") {
+} else if (Light === "yellow") {
   console.log("Slow down");
-} else if (Light ==="red") {
+} else if (Light === "red") {
   console.log("stop");
 } else {
   console.log("Invalid light");
@@ -138,14 +138,13 @@ if (Light ==="green") {
 
 let age2 = 34;
 let hasMembership = true;
-if (age2 <= 12 || age2 >= 65 ) {
+if (age2 <= 12 || age2 >= 65) {
   console.log("$6");
-} else if (hasMembership = false) {
+} else if ((hasMembership = false)) {
   console.log("$8");
 } else {
   console.log("$12");
 }
-
 
 // ----- 2. Password strength -----
 // Variable: password (string). Using password.length:
@@ -166,10 +165,10 @@ let xp = 20;
 const levelUpAt = 200;
 if (xp >= levelUpAt) {
   console.log("Level up!");
-xp = xp - levelUpAt;
- console.log(xp, "right")
-} 
-else { console.log(levelUpAt-xp, "hard")
+  xp = xp - levelUpAt;
+  console.log(xp, "right");
+} else {
+  console.log(levelUpAt - xp, "hard");
 }
 // ----- 4. Tip calculator -----
 // Variables: bill, serviceWasGood (boolean). Good -> 20% tip, otherwise 10%.
@@ -185,90 +184,89 @@ if (bill >= 20) {
 // Variables: temp, isRaining (boolean).
 //   raining AND temp < 15 -> "Coat and umbrella", raining only -> "Umbrella",
 //   temp > 28 -> "T-shirt", otherwise -> "Light jacket".
- let temp1 = 5;
+let temp1 = 5;
 let isRaining1 = false;
-if (temp1 < 15  && isRaining1 === false) {
+if (temp1 < 15 && isRaining1 === false) {
   console.log("Coat and umbrella");
-}else if(isRaining1 === true ){
-  console.log("umbrella")
-}else if(temp1 >= 28){
-  console.log("T-shirt")
-}else{
-  console.log("Light jacket")
+} else if (isRaining1 === true) {
+  console.log("umbrella");
+} else if (temp1 >= 28) {
+  console.log("T-shirt");
+} else {
+  console.log("Light jacket");
 }
 // ----- 6. Exam pass with bonus -----
 // Variables: score, attendedExtraClass (boolean).
 // Pass if score >= 50, OR if score >= 45 AND attended the extra class. Log "Pass" or "Fail".
-let scores = 46
-let attendedExtraClass = true
-if(scores >= 50) {
-  console.log("Pass")
-} else if(scores >= 45 && attendedExtraClass==true){
-  console.log("Pass")
-}else{
-  console.log("Fail")
+let scores = 46;
+let attendedExtraClass = true;
+if (scores >= 50) {
+  console.log("Pass");
+} else if (scores >= 45 && attendedExtraClass == true) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
 }
- 
+
 // ----- 7. Cart discount -----
 // Variables: total, isMember (boolean).
 //   total >= 100 AND member -> 20% off, total >= 100 only -> 10% off, otherwise -> no discount.
 // Log the final price.
-let total = 120
-let isMember = true
-if(total >= 100 && isMember === true){
- total = total * 0.8
-  console.log(total)
-} else if(total >= 100 && isMember === false) {
-   total = total * 0.9
-  console.log("total")
-}else{
-  console.log("no discount")
+let total = 120;
+let isMember = true;
+if (total >= 100 && isMember === true) {
+  total = total * 0.8;
+  console.log(total);
+} else if (total >= 100 && isMember === false) {
+  total = total * 0.9;
+  console.log("total");
+} else {
+  console.log("no discount");
 }
 // ----- 8. Login system -----
 // Variables: const correctUser, const correctPass, plus enteredUser, enteredPass, isLocked (boolean).
 // Log "Welcome" only when NOT locked AND both username and password match. Otherwise "Login failed".
-const correctUser = "hvn"
-const correctPass = 1234
- let enteredUser = "hvn"
- let enteredPass = 1234
-  isLocked = true
-if(isLocked && correctUser === enteredUser  && correctPass === enteredPass){
-  console.log("Welcome")
-}else {
-  console.log("Login failed")
+const correctUser = "hvn";
+const correctPass = 1234;
+let enteredUser = "hvn";
+let enteredPass = 1234;
+isLocked = true;
+if (isLocked && correctUser === enteredUser && correctPass === enteredPass) {
+  console.log("Welcome");
+} else {
+  console.log("Login failed");
 }
 
 // ----- 9. BMI category -----
 // Variables: weight (kg), height (m). bmi = weight / (height * height). Log:
 //   below 18.5 -> "Underweight", 18.5–24.9 -> "Normal", 25–29.9 -> "Overweight", 30+ -> "Obese".
-let weight = 100
-let height = 1.75
-let bmi = weight / (height * height)
-if(bmi < 18.5){
-  console.log("Underweight")
-}else if(bmi >= 18.5 & bmi <= 24.9 ){
-  console.log("Normal")
-}else if(bmi >= 25 & bmi <= 29.9){
-  console.log("Overweight")
-}else{
-  console.log("Obese")
+let weight = 100;
+let height = 1.75;
+let bmi = weight / (height * height);
+if (bmi < 18.5) {
+  console.log("Underweight");
+} else if ((bmi >= 18.5) & (bmi <= 24.9)) {
+  console.log("Normal");
+} else if ((bmi >= 25) & (bmi <= 29.9)) {
+  console.log("Overweight");
+} else {
+  console.log("Obese");
 }
-
 
 // ----- 10. Mini ATM -----
 // let balance = 500, let withdrawAmount = 200, const dailyLimit = 300.
 // Allow only when withdrawAmount <= balance AND withdrawAmount <= dailyLimit.
 //   allowed -> subtract from balance, log "Success" + new balance;
 //   too much -> "Insufficient funds"; over limit -> "Over daily limit".
-let balance = 50
-let withdrawAmount = 400
-const dailyLimit = 300
-if(withdrawAmount <= balance && withdrawAmount <= dailyLimit){
-  console.log("success")
-} else if (withdrawAmount <= balance && withdrawAmount <= dailyLimit){
-  console.log("Over daily limit")
-}else{
-  console.log( "balance")
+let balance = 50;
+let withdrawAmount = 400;
+const dailyLimit = 300;
+if (withdrawAmount <= balance && withdrawAmount <= dailyLimit) {
+  console.log("success");
+} else if (withdrawAmount <= balance && withdrawAmount <= dailyLimit) {
+  console.log("Over daily limit");
+} else {
+  console.log("balance");
 }
 // ----- 11. Leap year check -----
 // Variable: year. Leap when divisible by 4 AND (not divisible by 100 OR divisible by 400).
@@ -279,64 +277,125 @@ if(withdrawAmount <= balance && withdrawAmount <= dailyLimit){
 // ----- 12. FizzBuzz (one number) -----
 // Variable: n. divisible by 3 AND 5 -> "FizzBuzz", by 3 only -> "Fizz", by 5 only -> "Buzz",
 // otherwise -> the number itself. Test with 15, 9, 10, 7.
-let num  = 7
-if(num % 3 ===0 && num % 5 ===0){
-  console.log("FizzBuzz")
-}else if(num % 3 ===0){
-  console.log("Fizz")
-}else if(num % 5 ===0){
-  console.log("Buzz")
-}else{
-  console.log("num")
+let num = 7;
+if (num % 3 === 0 && num % 5 === 0) {
+  console.log("FizzBuzz");
+} else if (num % 3 === 0) {
+  console.log("Fizz");
+} else if (num % 5 === 0) {
+  console.log("Buzz");
+} else {
+  console.log("num");
 }
 // ----- 13. Rock paper scissors -----
 // Variables: player1, player2 (strings: "rock", "paper", "scissors").
 // Log "Player 1 wins", "Player 2 wins", or "Tie". rock>scissors, scissors>paper, paper>rock.
-// let players1 = "rock"
-// let player2 = "paper"
-// let players = "scissors"
-
+// let players1 = "rock";
+// let player2 = "paper";
+// let players = "scissors";
+// if ("rock" > "scissors" ||  "scissors" > "paper" && "paper" > "rock") {
+//   console.log("Player 1 wins");
+// } else if (  "paper" < "rock" || "rock" < "scissors" &&  "scissors" < "paper") {
+//   console.log("Player 2 wins");
+// } else {
+//   console.log("Tie");
+// }
 // ----- 14. Triangle type -----
 // Variables: sides a, b, c. First check valid triangle (each side < sum of other two).
 // invalid -> "Not a triangle"; all equal -> "Equilateral"; exactly two equal -> "Isosceles";
 // all different -> "Scalene".
+let sides2 = a;
+let sides = b;
+let side1 = "c";
+if (a > "c" && b > "c" && a === b) {
+  console.log("triangle");
+} else if (a < "c" && b < "c" && a < b) {
+  console.log("not triangle");
+} else if (a === b && b === "c" && "c" === a) {
+  console.log("equilateral");
+} else if (a === b && b === a) {
+  console.log("Isosceles");
+} else {
+  console.log("scalene");
+}
 
 // ----- 15. 12-hour clock -----
 // Variable: hour (0–23). Convert to 12-hour and log like "3 PM".
 //   0 -> "12 AM", 12 -> "12 PM", 1–11 -> "AM", 13–23 -> subtract 12 and add "PM".
 // Test with 0, 9, 12, 18.
-let hours  = 18
-if(hours === 0 ){
-  console.log("12 AM")
-}else if(hours === 12){
-  console.log("12PM")
-}else if(hours >= 1  && hours <= 11){
-  console.log("AM")
-}else if(hours >= 13 && hours <=23){
-  console.log("subtract 12" )
-}else{
-  console.log("PM")
+let hours = 18;
+if (hours === 0) {
+  console.log("12 AM");
+} else if (hours === 12) {
+  console.log("12PM");
+} else if (hours >= 1 && hours <= 11) {
+  console.log("AM");
+} else if (hours >= 13 && hours <= 23) {
+  console.log("subtract 12");
+} else {
+  console.log("PM");
 }
 
 // ----- 16. Shipping cost -----
 // Variables: weight (kg), isExpress (boolean), isMember (boolean).
 // Base: weight <= 1 -> $5, weight <= 5 -> $10, otherwise -> $20.
 // If isExpress, double base. Then if isMember, take $3 off (never below $0). Log final cost.
-
+let weight1 = 4
+let isExpress = true
+let isMember1 = true
+if(weight1 <= 1 && isExpress === true && isMember1 === true){
+  console.log("5$")
+}else if(weight1 <=5 && isExpress === false && isMember1 === false){
+console.log("10$")
+} else{
+  console.log("20$")
+}
 // ----- 17. Progressive tax -----
 // Variable: income. first $10,000 -> 0%, $10,001–$30,000 -> 10% on that portion,
 // above $30,000 -> 20% on that portion. Log total tax. Test with 5000, 20000, 50000.
-
+let income = 50000
+if(income<=10000){
+  income = income*1
+  console.log(income)
+}else if(income > 10001 && income <30000){
+  income= income*0.9
+  console.log(income)
+}else if(income> 30000){
+  income = income*0.8
+  console.log(income)
+}
 // ----- 18. Password validator -----
 // Variables: password (string), confirmPassword (string). Log "Valid" only when ALL true:
 //   length >= 8, NOT equal to "password", AND matches confirmPassword.
 // Otherwise a specific reason: "Too short", "Too common", or "Does not match" (in that order).
-
+let password1 = "123456789"
+let confirmPassword= "123456789"
+if(password1.length<8){
+  console.log("Too short")
+}else if(password1=== "password"){
+  console.log("Too common")
+}else if(password1 !== confirmPassword){
+  console.log("Does not match")
+}else{
+  console.log("Valid")
+}
 // ----- 19. Concert pricing -----
 // Variables: age, day (string), hasVipCode (boolean). Start price $50.
 //   under 18 OR 65+ -> half price; day is "Tuesday" -> $10 off (after age discount);
 //   hasVipCode -> add flat $30 at the end. Log the final price.
-
+let nas = 14
+let prices= "$50"
+let udur = "Tuesday"
+let hasVipCode = true
+if(nas < 18 || nas >65 && udur=== "Monday" && hasVipCode === false){
+  console.log("half price")
+}else if(nas < 18 || nas >65 && udur === "Tuesday" && hasVipCode === false){
+  prices= prices/2*0.9
+  console.log(prices)
+}else if(hasVipCode=== true && nas < 18 || nas >65 && udur === "Tuesday"){
+  prices+=30
+  console.log(prices)
+}
 // ----- 20. Vending machine -----
 // const price = 150 (cents), insertedAmount (cents), isSoldOut (boolean). In order:
 //   isSoldOut -> "Sold out" and stop; insertedAmount < price -> log how much more is needed;
