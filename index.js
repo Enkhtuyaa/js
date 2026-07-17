@@ -465,71 +465,114 @@ if (nas < 18 || (nas > 65 && udur === "Monday" && hasVipCode === false)) {
 // ----- 1. How long is the word? -----
 // word (string). Log word.length. if longer than 5 -> "Long word", else "Short word".
 // Test "sun" and "elephant".
-let word = "sun"
-console.log(word.length)
-if(word.length>5){
-  console.log("Long word")
-}else{
-  console.log("Short word")
+let word = "sun";
+console.log(word.length);
+if (word.length > 5) {
+  console.log("Long word");
+} else {
+  console.log("Short word");
 }
 // ----- 2. Loud and quiet -----
 // name (string). Log it with .toUpperCase() and with .toLowerCase().
-let name = "Welcome"
-console.log(name.toUpperCase())
-console.log(name.toLowerCase())
+let name = "Welcome";
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
 // ----- 3. First and last letter -----
 // word (string). Log word[0] and word[word.length - 1]. Test "hello" -> h and o.
-let words = "hello"
-console.log(words[0])
-console.log(words[words.length-1])
+let words = "hello";
+console.log(words[0]);
+console.log(words[words.length - 1]);
 // ----- 4. Cut a piece (slice) -----
 // word = "JavaScript". Log word.slice(0, 4) and word.slice(4).
-let word1 = "JavaScript"
-console.log(word1.slice(0, 4))
-console.log(word1.slice(4))
+let word1 = "JavaScript";
+console.log(word1.slice(0, 4));
+console.log(word1.slice(4));
 // ----- 5. Is it an email? -----
 // email (string). if email.includes("@") -> "Looks like an email", else "Not an email".
 // Test "sam@mail.com" and "sam.com".
-let email= "sam@mail.com"
-if(email.includes("@")){
-  console.log( email)
-}else{
-  console.log("Not an email")
+let email = "sam@mail.com";
+if (email.includes("@")) {
+  console.log("Looks like an email");
+} else {
+  console.log("Not an email");
 }
 // ----- 6. Full name builder -----
 // firstName, lastName (strings). Join with a space using + into fullName.
 // Log fullName and fullName.length.
-
+let firstName = "bat";
+let lastName = "bold";
+let fullName = firstName + " " + lastName;
+console.log(fullName);
+console.log(fullName.length);
 // ----- 7. Valid username -----
 // username (string). Valid only when length >= 3 AND <= 15.
 // Log "Valid username" or "Invalid username".
-
+let usernames = "Boldbaatar";
+if (usernames.length >= 3 && usernames.length <= 15) {
+  console.log("Valid username");
+} else {
+  console.log("Invalid username");
+}
 // ----- 8. Same word? (ignore case) -----
 // a, b (strings). if a.toLowerCase() === b.toLowerCase() -> "Match", else "No match".
 // Test "Hello" and "hello".
-
+let a4 = "HELLO";
+let b4 = "hello";
+if (a4.toLowerCase() === b4.toLowerCase()) {
+  console.log("Match");
+} else {
+  console.log("No match");
+}
 // ----- 9. Clean the spaces (trim) -----
 // raw = "   hi there   ". clean = raw.trim(). Log clean and clean.length. Compare to raw.length.
-
+let raw = "  hi there ";
+let clean = raw.trim();
+console.log(clean);
+console.log(clean.length);
+console.log(raw.length);
 // ----- 10. Find a letter (indexOf) -----
 // word (string). word.indexOf("a"). if -1 -> "No letter a", else "Found a at position " + ...
 // Test "banana" and "sky".
-
+let word2 = "sky";
+let position = word2.indexOf("a");
+if (position === -1) {
+  console.log("No letter a");
+} else {
+  console.log("Found a at position ");
+}
 // ----- 11. Phone area code -----
 // phone (10-char string like "5551234567"). Log "Area code: " + phone.slice(0, 3).
 // if phone.length is not exactly 10 -> "Invalid number".
-
+let phones = "5551234567";
+if (phones.length !== 10) {
+  console.log("Invalid number");
+} else {
+  console.log("Area code:" + phones.slice(0, 3));
+}
 // ----- 12. Password rule (length + word) -----
 // password (string). "Strong" only when length >= 8 AND NOT contains "password"
 // (!password.toLowerCase().includes("password")). Otherwise "Weak".
-
+let password2 = "dolgor897";
+if (password2.length >= 8 && !password2.toLowerCase().includes("password")) {
+  console.log("Strong");
+} else {
+  console.log("Weak");
+}
 // ----- 13. Initials -----
 // firstName, lastName (strings). first letters uppercase, join with + and dots -> "M.J.".
 // "maria" + "jones" -> "M.J.".
+let firstName1 = "maria";
+let lastName1 = "jones";
+console.log(
+  firstName1.toUpperCase().slice(0, 1) +
+    "." +
+    lastName1.toUpperCase().slice(0, 1),
+);
 
 // ----- 14. Capitalize a name -----
 // name = "maria". Join name[0].toUpperCase() with name.slice(1) -> "Maria".
-
+let name1 = "maria";
+console.log(name1[0].toUpperCase()+name1.slice(1));
 // ----- 15. Tiny palindrome check -----
 // word (3-letter string like "mom"). Reverse with word[2]+word[1]+word[0], compare with ===.
 // Log "Palindrome" or "Not a palindrome". Test "mom" and "cat".
