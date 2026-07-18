@@ -572,21 +572,39 @@ console.log(
 // ----- 14. Capitalize a name -----
 // name = "maria". Join name[0].toUpperCase() with name.slice(1) -> "Maria".
 let name1 = "maria";
-console.log(name1[0].toUpperCase()+name1.slice(1));
+console.log(name1[0].toUpperCase() + name1.slice(1));
 // ----- 15. Tiny palindrome check -----
 // word (3-letter string like "mom"). Reverse with word[2]+word[1]+word[0], compare with ===.
 // Log "Palindrome" or "Not a palindrome". Test "mom" and "cat".
-
+let word3 = "cat";
+let Reverse = word3[2] + word3[1] + word3[0];
+if (word3 === Reverse) {
+  console.log("Palindrome");
+} else {
+  console.log("Not a palindrome");
+}
 // --- Interview round: Numbers <-> Strings ---
 
 // ----- 16. Count the digits -----
 // n (number). String(n).length. if more than 3 digits -> "Big number", else "Small number".
 // Test 42 and 10000.
-
+let n2 = 10000;
+let n1 = String(n2).length;
+if (n1 > 3) {
+  console.log("Big number");
+} else {
+  console.log("Small number");
+}
 // ----- 17. Sum the two digits -----
 // n (2-digit number like 47). s = String(n). Number(s[0]) + Number(s[1]). Log the sum.
 // if sum is exactly 10 -> "Round". Test 47 and 55.
-
+let n3 = 47;
+let s = String(n3)
+let sum = Number(s[0])+ Number(s[1])
+console.log(sum)
+if(sum=== 10){
+  console.log("Round")
+}
 // ----- 18. First and last digit -----
 // n (3-digit number). s = String(n). Log Number(s[0]) and Number(s[s.length - 1]).
 // if equal -> "Same ends". Test 363 and 481.
