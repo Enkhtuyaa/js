@@ -599,30 +599,52 @@ if (n1 > 3) {
 // n (2-digit number like 47). s = String(n). Number(s[0]) + Number(s[1]). Log the sum.
 // if sum is exactly 10 -> "Round". Test 47 and 55.
 let n3 = 47;
-let s = String(n3)
-let sum = Number(s[0])+ Number(s[1])
-console.log(sum)
-if(sum=== 10){
-  console.log("Round")
+let s = String(n3);
+let sum = Number(s[0]) + Number(s[1]);
+console.log(sum);
+if (sum === 10) {
+  console.log("Round");
 }
 // ----- 18. First and last digit -----
 // n (3-digit number). s = String(n). Log Number(s[0]) and Number(s[s.length - 1]).
 // if equal -> "Same ends". Test 363 and 481.
-
+let n4 = 481;
+let s1 = String(n4);
+console.log(Number(s1[0]));
+console.log(Number(s1[s1.length - 1]));
 // ----- 19. Reverse a 3-digit number -----
 // n (3-digit number). s = String(n). reversed = Number(s[2] + s[1] + s[0]). Log it.
 // Test 123 -> 321.
-
+let n5 = 123;
+let s2 = String(n5);
+let Reversed = Number(s2[2] + s2[1] + s2[0]);
+console.log(Reversed);
 // ----- 20. Palindrome number -----
 // n (3-digit number). Build reversed like #19, compare to n with ===.
 // Log "Palindrome" or "Not a palindrome". Test 121 and 123.
-
+let n6 = 678;
+let s3 = String(n6);
+let reversed = Number(s3[2] + s3[1] + s3[0]);
+console.log(reversed);
+if (n6 === reversed) {
+  console.log("Palindrome");
+} else {
+  console.log("Not a palindrome");
+}
 // ----- 21. Contains a lucky 7? -----
 // n (number). if String(n).includes("7") -> "Lucky!", else "No luck". Test 1700 and 2024.
-
+let n7 = 2024;
+if(String(n7).includes("7")){
+  console.log("Lucky!")
+}else{
+  console.log("No luck")
+}
 // ----- 22. Glue two numbers -----
 // a = 12, b = 34. Number(String(a) + String(b)) -> 1234. Log it, then log typeof the result.
-
+let a3 = 12
+let b3 = 34
+console.log(Number(String(a3) + String(b3)))
+console.log(typeof Number(String(a3) + String(b3)) )
 // ----- 23. Pad the clock -----
 // minute (0–59). if String(minute).length === 1 add "0" in front. Log like "05" or "42".
 // Test 5 and 42.
