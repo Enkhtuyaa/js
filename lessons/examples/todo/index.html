@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do (Vanilla JS)</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+      form { display: flex; gap: 8px; }
+      input[type="text"] { flex: 1; padding: 8px; }
+      ul { list-style: none; padding: 0; }
+      li { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid #ddd; }
+      li.done span { text-decoration: line-through; color: #888; }
+      li span { flex: 1; }
+      .filters button.active { font-weight: bold; text-decoration: underline; }
+      footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+    </style>
+    <!-- defer: HTML бүрэн parse хийгдсэний дараа ажиллана -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <h1>To-Do</h1>
+
+    <form id="new-todo">
+      <input type="text" name="title" placeholder="Юу хийх вэ?" autocomplete="off" />
+      <button type="submit">Нэмэх</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <footer>
+      <span id="count"></span>
+      <div class="filters">
+        <button data-filter="all">Бүгд</button>
+        <button data-filter="active">Идэвхтэй</button>
+        <button data-filter="done">Дууссан</button>
+      </div>
+    </footer>
+  </body>
+</html>
