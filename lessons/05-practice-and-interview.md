@@ -155,4 +155,4 @@ window.addEventListener("scroll", throttle(() => console.log(scrollY), 200));
 
 Гүнзгий мэдлэг гэдэг нь framework мэдэх тоо биш, харин **доод давхаргыг ойлгож, шинэ зүйл гарч ирэхэд хурдан дасан зохицох чадвар**. Энэ хичээлүүдэд байгаа бүх ойлголт (closure, event loop, prototype, `this`) нь React, Vue, Node.js — бүгдийн цаана ажиллаж байдаг. Fundamentals-д зарцуулсан цаг эхэндээ удаан мэт санагдаж болох ч урт хугацаанд итгэлтэй, бат суурьтай инженер болгоно.
 
-⬅️ [Хичээл 4](04-dom-vanilla-js.md) · 🏠 [Агуулга](README.md)
+⬅️ [Хичээл 4](04-dom-vanilla-js.md) · ➡️ [Хичээл 6. AI-ийн кодыг шүүмжлэх](06-reviewing-ai-code.md) · 🏠 [Агуулга](README.md)

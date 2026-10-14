@@ -13,6 +13,7 @@
 | 3 | [Гүнзгий ойлголтууд](03-deep-concepts.md) | Higher-order functions, memory/GC, modules, `call`/`apply`/`bind` | 2–3 долоо хоног |
 | 4 | [DOM ба Vanilla JS](04-dom-vanilla-js.md) | DOM, events, delegation, `localStorage`, 4 жижиг төсөл | 2–3 долоо хоног + 1 сар |
 | 5 | [Дадлага ба Interview](05-practice-and-interview.md) | Хуваарь, эх сурвалж, debounce/throttle, 18 interview асуулт | — |
+| 6 | [AI-ийн кодыг шүүмжлэх](06-reviewing-ai-code.md) | Code review-ийн 7 асуулт, `node:test`, тестээр нотлох 13 алдаатай кодын дасгал | 2–3 долоо хоног |
 
 ## Жишээ кодыг ажиллуулах
 
@@ -25,6 +26,10 @@ node lessons/examples/03-deep.js        # myReduce/myMap/myFilter, myCall/myAppl
 node lessons/examples/modules/main.mjs  # ESM live binding
 node lessons/examples/modules/main.cjs  # CommonJS хуулбар
 node lessons/examples/05-interview.js   # debounce / throttle
+
+cd lessons/examples/06-review
+npm test                                # Хичээл 6: алдаатай код дээр тест унана
+npm run test:fixes                      # засварласан хариу дээр бүгд давна
 ```
 
 To-Do төсөл: [`examples/todo/index.html`](examples/todo/index.html)-ийг browser дээр нээ (эсвэл VS Code Live Server).

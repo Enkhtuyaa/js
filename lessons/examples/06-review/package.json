@@ -1,0 +1,9 @@
+{
+  "name": "lesson-06-review",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:fixes": "node --test --env-file=fixes.env"
+  }
+}
