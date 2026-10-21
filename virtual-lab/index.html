@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Виртуал лаборатори</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🧪 Виртуал химийн лаборатори</h1>
+      <p>Урвалж сонгоод (эсвэл чирээд) колбо руу хийнэ үү. Хүчил, шүлт, индикатор холиод өнгө, pH-ийн өөрчлөлтийг ажиглаарай.</p>
+    </header>
+
+    <main>
+      <section class="panel shelf">
+        <h2>Урвалжийн тавиур</h2>
+        <div id="reagents"></div>
+        <label class="amount">
+          Хэмжээ: <input type="range" id="amount" min="5" max="50" step="5" value="10" />
+          <span id="amountLabel">10 мл</span>
+        </label>
+      </section>
+
+      <section class="panel bench">
+        <h2>Ажлын ширээ</h2>
+        <div id="beakers"></div>
+        <div class="controls">
+          <button id="heatBtn">🔥 Халаах</button>
+          <button id="stirBtn">🥄 Хутгах</button>
+          <button id="emptyBtn">🗑️ Асгах</button>
+          <button id="resetBtn">↺ Шинээр эхлэх</button>
+        </div>
+      </section>
+
+      <section class="panel info">
+        <h2>Хэмжилт</h2>
+        <div class="meter">
+          <div>pH: <b id="ph">–</b></div>
+          <div class="ph-bar"><div id="phMarker"></div></div>
+          <div>Эзлэхүүн: <b id="vol">0</b> мл</div>
+          <div>Температур: <b id="temp">20</b> °C</div>
+          <div>Орчин: <b id="medium">–</b></div>
+        </div>
+        <h2>Ажиглалтын тэмдэглэл</h2>
+        <ol id="log"></ol>
+      </section>
+    </main>
+
+    <script src="lab.js"></script>
+  </body>
+</html>
